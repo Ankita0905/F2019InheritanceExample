@@ -1,15 +1,17 @@
 package com.lambton;
 
-import javax.xml.crypto.Data;
+import com.lambton.faculty.Faculty;
+import com.lambton.faculty.FullTimeFaculty;
+import com.lambton.student.Student;
+
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.Date;
 
 public class MainExample
 {
     public static void main(String[] args)
     {
         Person p1;
+        iPrintable ip;
 
         Student s1 = new Student(1,
                 "Pritesh",
@@ -18,6 +20,9 @@ public class MainExample
                 "Male",
                 "MADT",
                 2);
+
+        ip=s1;
+        ip.print();
 
         p1 = s1;
 

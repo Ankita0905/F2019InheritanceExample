@@ -1,8 +1,11 @@
-package com.lambton;
+package com.lambton.faculty;
+
+import com.lambton.faculty.Faculty;
+import com.lambton.iPrintable;
 
 import java.time.LocalDate;
 
-public class FullTimeFaculty extends Faculty {
+public class FullTimeFaculty extends Faculty implements iPrintable {
 
     private float bonus;
 
@@ -27,5 +30,10 @@ public class FullTimeFaculty extends Faculty {
     @Override
     public void calculateTotalSalary() {
         setNetSalary(getBaseSalary() + bonus);
+    }
+
+    @Override
+    public void print() {
+
     }
 }

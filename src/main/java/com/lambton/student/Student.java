@@ -1,9 +1,12 @@
-package com.lambton;
+package com.lambton.student;
+
+import com.lambton.Person;
+import com.lambton.iPrintable;
 
 import java.time.LocalDate;
 import java.util.Date;
 
-public class Student extends Person
+public class Student extends Person implements iPrintable
 {
     private String courseName;
     private int currentSemester;
@@ -18,6 +21,7 @@ public class Student extends Person
         super(id, firstName, lastName, birthDate, gender);
         this.courseName = courseName;
         this.currentSemester = currentSemester;
+        //x=900;
     }
 
     public String getCourseName() {
@@ -47,7 +51,7 @@ public class Student extends Person
         System.out.println("Student Current Semester: " + this.currentSemester);
     }
 
-    @Override
+  @Override
     public void print()
     {
         System.out.println("print() from Student");

@@ -1,4 +1,6 @@
-package com.lambton;
+package com.lambton.faculty;
+
+import com.lambton.Person;
 
 import java.time.LocalDate;
 

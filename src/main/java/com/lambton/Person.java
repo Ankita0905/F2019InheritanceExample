@@ -3,7 +3,7 @@ package com.lambton;
 import java.time.LocalDate;
 import java.util.Date;
 
-public abstract class Person {
+public abstract class Person implements iPrintable{
     private int id;
     private String firstName;
     private String lastName;
@@ -60,7 +60,7 @@ public abstract class Person {
 
     public abstract void display();
 
-    public void print()
+    //public void print()
     {
         System.out.println("print() from Person");
     }
